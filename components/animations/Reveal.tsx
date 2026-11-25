@@ -24,7 +24,7 @@ export function Reveal({ children, delay = 0, className, immediate = false, as =
     <Comp
       data-reveal
       className={className}
-      initial={immediate ? false : hidden}
+      initial={hidden}
       transition={transition}
       {...(immediate ? { animate: shown } : { whileInView: shown, viewport: VIEWPORT })}
     >

@@ -63,7 +63,7 @@ export function SystemMap() {
         <m.g
           data-reveal
           style={{ x: panelX, y: panelY, transformBox: "fill-box", transformOrigin: "center" }}
-          initial={false}
+          initial={reduce ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: DURATION.card + 0.25, ease: EASE, delay: 0.25 }}
         >

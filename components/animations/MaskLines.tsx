@@ -23,7 +23,7 @@ export function MaskLines({
           <m.span
             data-reveal
             className={`block ${lineClassName?.[i] ?? ""}`}
-            initial={false}
+            initial={reduce ? false : { y: "100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: reduce ? 0.15 : DURATION.hero, ease: EASE, delay: delay + i * STAGGER * 1.4 }}
           >
